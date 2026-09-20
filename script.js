@@ -294,6 +294,10 @@ function animate() {
 
 animate();
 
+setTimeout(() => {
+  loading.classList.add("done");
+}, 700);
+
 window.addEventListener("resize", () => {
   camera.aspect = innerWidth / innerHeight;
   camera.updateProjectionMatrix();
