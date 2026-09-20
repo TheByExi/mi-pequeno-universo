@@ -1,69 +1,134 @@
 <!doctype html>
+
 <html lang="es">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
   <title>Mi pequeño universo ❤️</title>
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="style.css">
+
+  <script type="importmap">
+  {
+    "imports": {
+      "three": "https://cdn.jsdelivr.net/npm/three@0.167.1/build/three.module.js"
+    }
+  }
+  </script>
+
 </head>
+
 <body>
+
   <div id="loading">
     <div class="loader-heart">♥</div>
     <p>Preparando un pequeño universo...</p>
   </div>
 
-  <canvas id="space"></canvas>
+<canvas id="space"></canvas>
 
   <div id="intro" class="screen">
     <div class="intro-content">
-      <div class="tiny-stars">✦　·　✧　·　✦</div>
-      <p class="eyebrow">HICE ALGO PARA VOS</p>
-      <h1>Mi pequeño<br><span>universo</span></h1>
-      <p class="intro-text">Hay cosas que no sé explicar con palabras,<br>así que intenté convertirlas en un lugar.</p>
-      <button id="enterBtn">Entrar a mi universo <span>♥</span></button>
-      <p class="hint">Tocá y arrastrá para mirar alrededor</p>
-    </div>
+
+```
+  <div class="tiny-stars">✦　·　✧　·　✦</div>
+
+  <p class="eyebrow">HICE ALGO PARA VOS</p>
+
+  <h1>
+    Mi pequeño<br>
+    <span>universo</span>
+  </h1>
+
+  <p class="intro-text">
+    Hay cosas que no sé explicar con palabras,<br>
+    así que intenté convertirlas en un lugar.
+  </p>
+
+  <button id="enterBtn">
+    Entrar a mi universo <span>♥</span>
+  </button>
+
+  <p class="hint">
+    Tocá y arrastrá para mirar alrededor
+  </p>
+
+</div>
+```
+
   </div>
 
   <main id="experience" class="hidden">
-    <div class="top-message">
-      <span>PARA VOS</span>
-      <strong>❤️</strong>
-    </div>
 
-    <div id="quote" class="quote"></div>
+```
+<div class="top-message">
+  <span>PARA VOS</span>
+  <strong>❤️</strong>
+</div>
 
-    <div class="center-message">
-      <p>EN TODO ESTE UNIVERSO...</p>
-      <h2>TE ELEGIRÍA<br><em>OTRA VEZ.</em></h2>
-    </div>
+<div id="quote" class="quote"></div>
 
-    <div class="controls">
-      <button id="resetBtn" aria-label="Centrar universo">↻</button>
-      <span>ARRASTRÁ PARA EXPLORAR</span>
-    </div>
+<div class="center-message">
+  <p>EN TODO ESTE UNIVERSO...</p>
 
-    <button id="musicBtn" class="music" aria-label="Activar música">♪</button>
+  <h2>
+    TE ELEGIRÍA<br>
+    <em>OTRA VEZ.</em>
+  </h2>
+</div>
+
+<div class="controls">
+  <button id="resetBtn" aria-label="Centrar universo">↻</button>
+  <span>ARRASTRÁ PARA EXPLORAR</span>
+</div>
+
+<button id="musicBtn" class="music" aria-label="Activar música">
+  ♪
+</button>
+```
+
   </main>
 
   <div id="finalMessage" class="final hidden">
-    <div class="final-card">
-      <div class="final-flower">🌷</div>
-      <p class="eyebrow">Y SI ALGÚN DÍA LO OLVIDÁS...</p>
-      <h2>Recordá esto:</h2>
-      <p class="final-text">
-        Sos una de las cosas más bonitas que me pasó.
-        Gracias por existir, por compartir tu vida conmigo
-        y por hacer que mi mundo tenga un poquito más de luz.
-      </p>
-      <div class="signature">Con todo mi amor,<br><span>EXI ❤️</span></div>
-      <button id="closeFinal">Volver a mirar las estrellas</button>
-    </div>
+
+```
+<div class="final-card">
+
+  <div class="final-flower">🌷</div>
+
+  <p class="eyebrow">
+    Y SI ALGÚN DÍA LO OLVIDÁS...
+  </p>
+
+  <h2>Recordá esto:</h2>
+
+  <p class="final-text">
+    Sos una de las cosas más bonitas que me pasó.
+    Gracias por existir, por compartir tu vida conmigo
+    y por hacer que mi mundo tenga un poquito más de luz.
+  </p>
+
+  <div class="signature">
+    Con todo mi amor,<br>
+    <span>EXI ❤️</span>
+  </div>
+
+  <button id="closeFinal">
+    Volver a mirar las estrellas
+  </button>
+
+</div>
+```
+
   </div>
 
   <script type="module" src="script.js"></script>
+
 </body>
 </html>
